@@ -361,7 +361,7 @@ public abstract class Exporter {
       if (Config.getAsBoolean("exporter.groups.fhir.export")) {
         FhirGroupExporterR4.addPatient((String) person.attributes.get(Person.ID));
       }
-      if (Config.getAsBoolean("exporter.groups.fhir_5.export")) {
+      if (Config.getAsBoolean("exporter.groups.fhir_r5.export")) {
         FhirGroupExporterR5.addPatient((String) person.attributes.get(Person.ID));
       }
     }
